@@ -1,0 +1,299 @@
+
+/* utilities desing   */
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* first section design starts from here */
+
+.first-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #5506f5;
+    padding: 100px;
+
+}
+
+.half-section img{
+    transition: .8s;
+}
+
+.half-section:hover img{
+    transform: scale(1.2);
+}
+
+.title{
+    font-size: 64px;
+    color: #FFFFFF;
+    
+}
+
+.button{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    background: #E02C6D;
+}
+
+.button:hover{
+    background-color: rgb(128, 54, 41);
+}
+
+.fa-arrow-right{
+    padding-left: 5px;
+}
+
+.fa-futbol{
+    font-size: 50px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 1.3s;
+}
+.fa-futbol:hover{
+    
+    font-size: 30px;
+    color: rgb(160, 105, 105);
+    
+}
+
+.first-section .half-section img{
+    width: 85%;
+   
+}
+
+/* second section design from here */
+
+.second-section{
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    
+    align-items: center;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 870px;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.player{
+    justify-content: center;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 18px 1px rgb(214, 207, 207);
+    padding: 13px;
+}
+
+.players .player img{
+    width: 100%;
+    
+}
+
+.player-name{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.player-description{
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+/* first bonus section starts from here */
+
+.sports-blog{
+    background-color: #005e6e;  
+    
+}
+
+.blog-title{
+    color: white;
+    
+}
+.blog-main-title{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding:20px 10px;
+    margin-bottom: 0px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding:30px 30px;
+    
+}
+.blog{
+    
+    padding:10px;
+    align-items: center;
+}
+
+.blogs .blog img{
+    width: 100%;
+}
+
+.blog:hover{
+    border-radius: 10px;
+    box-shadow: 1px 1px 18px 1px rgb(214, 207, 207);
+}
+
+/* second bonus section starts from here */
+.event-sponsor{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 18px 1px rgb(180, 171, 171);
+}
+.sponsor-title{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(25, 153, 42);
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor{
+    justify-content: center;
+    align-items: center;
+   padding-bottom: 15px;
+}
+
+.sponsor:hover img{
+
+    transform: scale(1.2);
+    
+}
+
+.sponsors .sponsor img{
+    width: 60%;
+}
+
+
+/* footer part design starts from here */
+.footer-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.footer-part .footer-img img{
+    width: 400px;
+    height: 100px;
+}
+
+.fab{
+    font-size: 30px;
+    color: rgb(40, 18, 138);
+    padding: 10px;
+}
+.copyright{
+    font-size: 18px;
+}
+
+
+/*-------------------
+      Media Quries
+------------------- */
+
+/* mobile device */
+@media only screen and (max-width:688px){
+    /* for first section  */
+    main{
+        overflow-x: hidden;
+    }
+    .first-section{
+        width: 100%;
+        display:table-row;
+    }
+    .half-section{
+        padding: 30px;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+    .far{
+        font-size: 20px;
+    }
+  
+    .button{
+        padding: 10px;
+    }
+/* second section  */
+    .players{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .player{
+        justify-content: center;
+        align-items: center;    
+    }
+
+
+/*bonus sections
+------------------
+blog section  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.blog{
+    justify-content: center;
+    align-items: center; 
+}
+
+
+/* sponsor section  */
+.sponsors{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.sponsor{
+    justify-content: center;
+    align-items: center; 
+}
+
+
+/* footer-section */
+.footer{
+    margin-top: 30px;
+}
+    .footer-part{
+        display:table-row;
+    }
+    .footer-part .footer-img img{
+        
+        padding: 20px;
+        width: 200px;
+        height: 50px;
+    }
+    
+}
